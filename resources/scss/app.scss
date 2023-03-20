@@ -1,0 +1,25 @@
+// Reset
+@import './partials/reset';
+
+// Fonts
+@import './partials/fonts';
+
+// Flex Classes
+@import './partials/flex';
+
+// Layouts
+@import './style_layouts/app_layout.scss';
+
+// General Rules
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

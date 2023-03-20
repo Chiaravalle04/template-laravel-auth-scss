@@ -1,0 +1,14 @@
+header {
+    height: 80px;
+    .main-container {
+        height: 100%;
+        nav {
+            height: 100%;
+            ul {
+                .login-register {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}

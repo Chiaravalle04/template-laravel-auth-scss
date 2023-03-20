@@ -1,0 +1,24 @@
+// Flex Classes
+.d-flex {
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-space-b {
+    justify-content: space-between;
+}
+
+.jc-space-a {
+    justify-content: space-around;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
