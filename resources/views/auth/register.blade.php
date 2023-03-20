@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="main-container d-flex jc-center">
+    <div class="main-container">
 
         <div class="register-card">
 
