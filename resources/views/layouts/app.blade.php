@@ -5,6 +5,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!--Favicon-->
+        <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -37,7 +40,6 @@
                     <ul class="d-flex">
 
                         <!-- Authentication Links -->
-
                         @guest
                         
                         <li class="login-register">
@@ -58,19 +60,19 @@
 
                         @else
 
-                        <li class="nav-item dropdown">
+                        <li>
 
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <a id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }}
                             </a>
 
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <div aria-labelledby="navbarDropdown">
 
-                                <a class="dropdown-item" href="{{ route('admin.dashboard') }}">{{__('Dashboard')}}</a>
+                                <a href="{{ route('admin.dashboard') }}">{{__('Dashboard')}}</a>
 
-                                <a class="dropdown-item" href="{{ url('profile') }}">{{__('Profile')}}</a>
+                                <a href="{{ url('profile') }}">{{__('Profile')}}</a>
 
-                                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                <a href="{{ route('logout') }}" onclick="event.preventDefault();
 
                                                     document.getElementById('logout-form').submit();">
 
@@ -86,7 +88,7 @@
                         </li>
 
                         @endguest
-                        
+
                     </ul>
 
                 </nav>
@@ -96,7 +98,9 @@
         </header>
 
         <main>
+
             @yield('content')
+
         </main>
 
     </body>

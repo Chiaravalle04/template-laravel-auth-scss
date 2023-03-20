@@ -1,23 +1,27 @@
 @extends('layouts.admin')
 
 @section('content')
-<div class="container-fluid mt-4">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                    <div class="alert alert-success" role="alert">
-                        {{ session('status') }}
-                    </div>
-                    @endif
+    <div class="dashboard">
 
-                    {{ __('You are logged in!') }}
+        <h2 class="card-header">{{ __('Dashboard') }}</h2>
+        
+        <div class="card-dashboard">
+        
+            @if (session('status'))
+        
+                <div role="alert">
+        
+                    {{ session('status') }}
+        
                 </div>
-            </div>
+        
+            @endif
+        
+            <span>{{ __('You are logged in!') }}</span>
+
         </div>
+
     </div>
-</div>
+
 @endsection

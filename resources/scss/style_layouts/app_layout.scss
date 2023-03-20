@@ -5,6 +5,10 @@ header {
         nav {
             height: 100%;
             ul {
+                a {
+                    font-weight: bold;
+                    color: red;
+                }
                 .login-register {
                     margin-left: 15px;
                 }

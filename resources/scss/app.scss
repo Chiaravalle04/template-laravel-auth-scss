@@ -8,7 +8,24 @@
 @import './partials/flex';
 
 // Layouts
+// ----- App -----
 @import './style_layouts/app_layout.scss';
+
+// ----- Admin -----
+@import './style_layouts/admin_layout.scss';
+
+// Components
+// ----- Welcome -----
+@import './components/welcome.scss';
+
+// ----- Login -----
+@import './components/login.scss';
+
+// ----- Register -----
+@import './components/register.scss';
+
+// ----- Dashboard -----
+@import './components/dashboard.scss';
 
 // General Rules
 .main-container {
