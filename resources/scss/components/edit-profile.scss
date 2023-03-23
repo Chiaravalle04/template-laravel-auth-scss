@@ -1,0 +1,48 @@
+// Edit Profile
+.edit-profile {
+    h2 {
+        font-size: 35px;
+        color: red;
+        margin-bottom: 15px;
+    }
+    header {
+        margin-bottom: 15px;
+        h2 {
+            font-size: 30px;
+            color: red;
+            margin-bottom: 15px;
+        }
+    }
+    label {
+        display: block;
+        font-weight: bold;
+        color: red;
+        margin-bottom: 10px;
+    }
+    input {
+        display: inline-block;
+        width: 200px;
+        height: 35px;
+        line-height: 35px;
+        padding: 0 10px;
+        margin-bottom: 10px;
+        border: 2px solid red;
+        border-radius: 15px;
+        &:focus {
+            outline: none;
+        }
+    }
+    button {
+        display: block;
+        min-width: 150px;
+        height: 30px;
+        border: none;
+        border-radius: 15px;
+        background-color: red;
+        color: #fff;
+        font-weight: bold;
+        margin: 15px 0;
+        cursor: pointer;
+    }
+
+}

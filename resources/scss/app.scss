@@ -1,20 +1,20 @@
-// Reset
+// ***** Reset *****
 @import './partials/reset';
 
-// Fonts
+// ***** Fonts *****
 @import './partials/fonts';
 
-// Flex Classes
+// ***** Flex Classes *****
 @import './partials/flex';
 
-// Layouts
+// ***** Layouts *****
 // ----- App -----
 @import './style_layouts/app_layout.scss';
 
 // ----- Admin -----
 @import './style_layouts/admin_layout.scss';
 
-// Components
+// ***** Components *****
 // ----- Welcome -----
 @import './components/welcome.scss';
 
@@ -29,6 +29,9 @@
 
 // ----- Dashboard -----
 @import './components/dashboard.scss';
+
+// ----- Profile -----
+@import './components/edit-profile.scss';
 
 // General Rules
 .main-container {
